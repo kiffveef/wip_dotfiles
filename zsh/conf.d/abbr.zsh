@@ -1,0 +1,11 @@
+abbr -S resh="exec $SHELL -l"
+abbr -S l="lsd -l --group-directories-first"
+abbr -S ll="lsd -lF --group-directories-first"
+abbr -S la="lsd -laF --group-directories-first"
+abbr -S lt="lsd -lF --group-directories-first --tree"
+abbr -S ..="cd .."
+abbr -S ...="cd ../../"
+abbr -S md="mkdir -p"
+abbr -S vn="nvim"
+abbr -S cargo-pkg-update="cargo install-update --all"
+

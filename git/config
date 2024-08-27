@@ -1,0 +1,6 @@
+[include]
+  path = ~/.config/git/conf.d/workuser.conf
+  path = ~/.config/git/conf.d/alias.conf
+  path = ~/.config/git/conf.d/ghq.conf
+[includeIf "gitdir:~/.config/"]
+  path = ~/.config/git/conf.d/kiffveef.conf
