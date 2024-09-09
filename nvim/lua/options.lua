@@ -1,10 +1,32 @@
-local opt = vim.opt
+local options = {
+  encoding = "utf-8",
+  fileencoding = "utf-8",
+  title = true,
+  backup = false,
+  swapfile = false,
+  undofile = true,
+  updatetime = 300,
+  writebackup = false,
+  backupskip = { "/tmp/*", "/private/tmp/*" },
+  clipboard = "unnamedplus",
+  mouse = "a",
+  showtabline = 2,
+  smartcase = true,
+  ignorecase = true,
+  number = true,
+  tabstop = 2,
+  shiftwidth = 2,
+  expandtab = true,
+  cursorline = true,
+  relativenumber = false,
+  signcolumn = "yes",
+  scrolloff = 10,
+}
 
-opt.number = true
+vim.opt.shortmess:append("c")
 
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.expandtab = true
+for k, v in pairs(options) do
+  vim.opt[k] = v
+end
 
-opt.ignorecase = true
-opt.smartcase = true
+vim.cmd("set whichwrap+=<,>,[,],h,l")
