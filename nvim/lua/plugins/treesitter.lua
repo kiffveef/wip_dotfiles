@@ -18,6 +18,7 @@ return {
     "bash", 
     "jsx", 
     "tsx", 
+    "vue", 
     "ruby", 
   }, 
   auto_install = true, 

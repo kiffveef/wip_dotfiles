@@ -10,7 +10,7 @@ local options = {
   backupskip = { "/tmp/*", "/private/tmp/*" },
   clipboard = "unnamedplus",
   mouse = "a",
-  showtabline = 2,
+  showtabline = 0,
   smartcase = true,
   ignorecase = true,
   number = true,
@@ -30,3 +30,4 @@ for k, v in pairs(options) do
 end
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
+
